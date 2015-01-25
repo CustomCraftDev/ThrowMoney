@@ -1,0 +1,43 @@
+# @author undeaD_D, DieFriiks, IamNoob, PokemonOnline.xyz
+# @link http://www.pokemon-online.xyz/
+# @github https://github.com/CustomCraftDev/ThrowMoney
+debug: true
+
+msg:
+  nopermission: '&4you dont have permission to that command'
+  disable: '&4was disabled'
+  reset: '&4was reset'
+  reload: '&4was reloaded'
+  getmoney: '&8you recieved &e%amount% Golden Ingots'
+  sellmoney: '&8you recieved &e1000 $'
+  notenough: '&8insufficient founds'
+  prefix: '&e[&8ThrowMoney&e] '
+
+money:
+  material: 'GOLD_NUGGET'
+  name: '&e[&8Money&e]'
+  lore:
+    - '&8Throwable Money'
+    - '&8Worth: 1000$' 
+  enchant: 'DURABILITY'
+  enchantlvl: 10
+  worth: 1000
+
+help:
+  info:
+    - 'this help section can be deleted, if you want ^^'
+    - 'dont touch debug setting'
+    - 'compatible with 1.7.2 - 1.8.1'
+    - 'you need vault and an economy plugin for this to work'
+    - 'if you change something here call /tma reload to apply the settings'
+    - 'have fun playing :P'
+  permissions:
+    - 'tm.use  <-- permission for /tm <amount> and rightclick to get back the money'
+    - 'tm.reload <-- you can now reload ThrowMoney's config.yml'
+    - 'tm.reset <-- you can now reset ThrowMoney's config.yml'
+    - 'tm.disable <-- you can now disable ThrowMoney untill next reload / restart'
+  cmds:
+    - '/tm <amount>'
+    - '/tma disable'
+    - '/tma reload'
+    - '/tma reset'
