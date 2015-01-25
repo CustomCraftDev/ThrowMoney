@@ -43,17 +43,10 @@ public class Throwmoney extends JavaPlugin implements CommandExecutor, Listener{
 		getCommand("tma").setExecutor(this);
 		this.getServer().getPluginManager().registerEvents(this, this);
 		
-        if (!setupEconomy() ) {
-            say("Vault is needed to hook into your Money Plugin");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-		
-		if(debug) {
-			config.set("debug", false);
-				saveConfig();
-				reloadConfig();
-			updater.send();
+        	if (!setupEconomy() ) {
+        	    say("Vault is needed to hook into your Money Plugin");
+		    getServer().getPluginManager().disablePlugin(this);
+        	    return;
 		}
 	}
 
